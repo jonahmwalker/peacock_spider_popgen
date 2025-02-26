@@ -38,7 +38,7 @@ rule all:
 # To finish with the deduplicated and processed (indexed and stats-ed) aligned cram files:
     # input: expand("D_cram_aligned_qqMarSpei1.1_rm/{specimen_id}.{sequence_id}.qqMarSpei1.1.rm.cram.flagstats", zip, specimen_id=specimen_id, sequence_id=sequence_id)
 # To finish with the vcf:
-    # input: expand("E_vcf_qqMarSpei1.1/maratus.qqMarSpei1.1.{interval}.vcf.gz", interval=interval)
+    input: expand("E_vcf_qqMarSpei1.1/maratus.qqMarSpei1.1.{interval}.vcf.gz", interval=interval)
 
 
 # NOTE — In all the steps below, you need to specify the cpus, memory on first attempt, and queue to submit for LSF.
