@@ -1,4 +1,4 @@
-# Unaligned CRAM read files > VCF snakemake pipeline
+# Unaligned CRAM read files > VCF: snakemake pipeline
 
 This snakemake pipeline will produce VCFs in specified genomic regions from raw read files in unaligned cram format. This was developed to accommodate the very large genomes of peacock spider (5-10Gb) and therefore minimises storage usage.
 
