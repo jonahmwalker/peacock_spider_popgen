@@ -69,3 +69,13 @@ snakemake -s 0_scripts_snakemake/maratus_popgen_reads_to_vcf.snakefile \
   --cluster-config 0_scripts_snakemake/maratus_popgen_reads_to_vcf.cluster.yaml --cluster-cancel bkill
 ```
 
+
+
+## After running the pipeline
+
+You may wish to run multiQC to check the intermediate and output files.
+```
+module load multiqc/1.22.1--pyhdfd78af_0
+cd 02_reads_to_vcf
+multiqc .
+```
