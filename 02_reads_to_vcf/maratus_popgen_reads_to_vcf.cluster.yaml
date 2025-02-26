@@ -1,0 +1,8 @@
+{
+    "__default__" :
+    {
+        "output" : "logs/{rule}.{wildcards}.out",
+        "error" : "logs/{rule}.{wildcards}.err",
+        "account" : "team347"
+    }
+}
